@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 - Вход</title>
+    <link rel="stylesheet" href="../assets/styles/style-base.css">
+    <link rel="stylesheet" href="../assets/styles/style-auth.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/dota2logo.png" alt="">
+        </a>
+        <a href="login.html" class="calendar">Календарь</a>
+        <div class="auth">
+            <a href="login.html">Вход</a>
+        </div>
+    </nav>
+    <div class="reg-window">
+        <h1>Вход <span class="status">Неверный логин или пароль</span></h1>
+        <div class="reg-section">
+            <p>Логин:</p>
+            <input type="text" placeholder="Логин" id="login">
+            <p>Пароль:</p>
+            <input type="password" placeholder="Пароль" id="password">
+        </div>
+        <button id="btn" onclick="loginBtn()">Войти</button>
+    </div>
+    <script src="../scripts/auth.js"></script>
+</body>
+</html>
