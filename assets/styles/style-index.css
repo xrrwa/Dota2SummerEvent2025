@@ -1,0 +1,120 @@
+.main-container {
+    min-height: calc(100vh + 128px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/wr-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container p, .main-container h1, .main-container a {
+    color: #ffffff;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 16px;
+    gap: 16px;
+    background-color: #00000075;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff25;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #ffffff25;
+}
+
+.info h1 {
+    text-align: center;
+}
+ 
+.text {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 1px solid #ffffff25;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #ffffff25;
+    box-shadow: 0 0 5px 0 #ffffff25;
+}
+
+.slider {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 70vw;
+    margin: 64px auto;
+}
+
+.arrow-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.arrow-btn:hover {
+    scale: 1.1;
+}
+
+.arrow-btn>img {
+    width: 24px;
+    height: 24px;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.prev-btn {
+    transform: rotate(180deg);
+}
+
+.slides {
+    display: flex;
+    width: 70vw;
+    transition: 1s ease;
+}
+
+.slides>img {
+    min-width: 100%;
+    display: block;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 660px) {
+    .info {
+        width: 80%;
+    }
+    .slides, .slider {
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    .info {
+        margin-top: 64px;
+    }
+}

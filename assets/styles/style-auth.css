@@ -1,0 +1,82 @@
+body {
+    background: url(../images/wr-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reg-window {
+    padding: 16px;
+    display: flex;
+    flex-flow: column;
+    width: 320px;
+    gap: 32px;
+    background-color: #00000075;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff25;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #ffffff25;
+}
+
+button {
+    padding: 8px 16px;
+    border: 1px solid #ffffff25;
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: #ffffff25;
+    box-shadow: 0 0 5px 0 #ffffff25;
+}
+
+.reg-window h1, .reg-window p {
+    color: #ffffff;
+}
+
+.reg-window input {
+    padding: 8px 16px;
+    border: 1px solid #ffffff25;
+    background: none;
+    width: 100%;
+    border-radius: 10px;
+    transition: .2s;
+    color: #ffffff;
+}
+
+.reg-window input:hover {
+    box-shadow: 0 0 5px 0 #ffffff25;
+}
+
+.reg-window input:focus {
+    background-color: #ffffff25;
+    outline: none;
+}
+
+.reg-section {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+.status {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ff7070;
+    transition: .2s;
+}
+
+@media screen and (max-height: 540px) {
+    .reg-window {
+        margin-top: 64px;
+    }
+}

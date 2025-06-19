@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/wr-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.general-container {
+    display: flex;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.main-container {
+    margin-top: 100px;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    padding: 16px;
+    background-color: #00000075;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid #ffffff25;
+}
+
+.main-container h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.day {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ffffff25;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.day p {
+    color: white;
+    text-align: center;
+}
+
+.day:hover {
+    box-shadow: 0 0 5px 0 #ffffff25;
+}
+
+.day-list {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.active {
+    background-color: #ffffff25;
+}
+
+.today {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes error {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: #ff6a6a
+    }
+    100% {
+        color: #ffffff;
+    }
+}
